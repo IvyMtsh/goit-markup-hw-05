@@ -553,6 +553,7 @@ body {
 }
 
 .form-label {
+  display: block;
   color: #8e8f99;
   font-size: 12px;
   font-weight: 400;
@@ -616,17 +617,8 @@ body {
 .form-field-checkbox {
   margin-bottom: 24px;
 }
-.form-label-checkbox {
-  display: block;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
+
 .checkbox-span {
-  position: relative;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -639,6 +631,15 @@ body {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
+}
+.form-label-checkbox {
+  position: relative;
+  display: block;
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 .icon-form-span {
   position: absolute;
@@ -655,6 +656,9 @@ input:checked + label > span {
 
 .link-form {
   color: #4d5ae5;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
 }
 
 .form-button {
